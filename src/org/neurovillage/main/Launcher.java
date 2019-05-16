@@ -49,8 +49,8 @@ public class Launcher extends JFrame
 	private boolean audioFeedback;
 	private boolean is24bit;
 	
-	private JButton btLaunchVisualization;
 	private JButton btLaunchGame;
+	private JButton btLaunchVisualization;
 	private JButton btLaunchOSC;
 	private JButton btLaunchSerial;
 	
@@ -218,10 +218,7 @@ public class Launcher extends JFrame
 							if (ngvis!=null)
 								ngvis.getGameFrame().setVisible(true);
 							nfbGraph.init();
-							btLaunchVisualization.setEnabled(false);
-							Launcher.this.setVisible(false);
-
-
+							btLaunchVisualization.setEnabled(true);
 						}
 						catch (Exception e)
 						{
@@ -251,7 +248,7 @@ public class Launcher extends JFrame
 						NFBServer rn = new NFBServer(config, cbFromFile.isSelected(), false, cbBit24.isSelected(), proMode);
 						rn.setConfig(config);
 
-
+ 
 						// fft data and preprocessor task
 						DefaultFFTData fftData = new DefaultFFTData(NFBServer.samplesPerSecond, NFBServer.bins, NFBServer.numChannels);
 						FFTPreprocessor fftPreprocessor = new FFTPreprocessor(fftData, rn);
@@ -291,9 +288,7 @@ public class Launcher extends JFrame
 						nfbGraph.init();
 						
 						btLaunchVisualization.setEnabled(false);
-						Launcher.this.setVisible(false);
-
-
+						Launcher.this.setVisible(true);
 					}
 				};
 				Launcher.this.setVisible(false);
@@ -363,10 +358,7 @@ public class Launcher extends JFrame
 							}
 								
 							btLaunchVisualization.setEnabled(false);
-							Launcher.this.setVisible(false);
-
-
-
+                                                        btLaunchOSC.setEnabled(false);
 						} catch (Exception e)
 						{
 							e.printStackTrace();
@@ -440,9 +432,7 @@ public class Launcher extends JFrame
 							}
 								
 							btLaunchVisualization.setEnabled(false);
-							Launcher.this.setVisible(false);
-
-
+                                                        btLaunchSerial.setEnabled(false);
 						} catch (Exception e)
 						{
 							e.printStackTrace();

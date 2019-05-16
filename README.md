@@ -1,8 +1,8 @@
 # Neurolab Desktop
 
 [![Build Status](https://travis-ci.org/fossasia/neurolab-desktop.svg?branch=master)](https://travis-ci.org/fossasia/neurolab-desktop)
-[![Gitter](https://badges.gitter.im/fossasia/pslab.svg)](https://gitter.im/fossasia/pslab?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
-[![Mailing List](https://img.shields.io/badge/Mailing%20List-FOSSASIA-blue.svg)](mailto:pslab-fossasia@googlegroups.com)
+[![Gitter](https://badges.gitter.im/fossasia/neurolab.svg)](https://gitter.im/fossasia/neurolab?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Mailing List](https://img.shields.io/badge/Mailing%20List-FOSSASIA-blue.svg)](https://groups.google.com/forum/#!forum/pslab-fossasia)
 [![Twitter Follow](https://img.shields.io/twitter/follow/pslabio.svg?style=social&label=Follow&maxAge=2592000?style=flat-square)](https://twitter.com/pslabio)
 
 Neurolab Desktop is a software to read EEG data from a serial stream, do basic DSP, and then output interpreted data to OpenGL, audio, files, OSC and serial. The project goes back to the Neurophlex.

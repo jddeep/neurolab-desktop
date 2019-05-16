@@ -8,11 +8,7 @@ public class NeuroUtils {
 	{
 		HashMap<String,Float> lookUpTable = new HashMap<String, Float>();
 		
-		float range = 0;
-		if (((startVal<0) && (endVal<0)) || ((startVal>0) && (endVal>0)))
-			range = Math.abs(startVal - endVal);
-		else
-			range = Math.abs(startVal) +  Math.abs(endVal); 
+		float range = Math.abs(startVal - endVal); 
 		
 		float step = range / (float)val;
 		float curVal = startVal;
